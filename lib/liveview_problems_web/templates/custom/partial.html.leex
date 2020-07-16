@@ -1,0 +1,4 @@
+<%= live_component(@socket, WrapperComponent) do %>
+  <%= live_component @socket, StatefulComponent, id: :stateful_1, text: @parent_text_1, idx: 1 %>
+  <%= live_component @socket, StatefulComponent, id: :stateful_2, text: @parent_text_2, idx: 2 %>
+<% end %>

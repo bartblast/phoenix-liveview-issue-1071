@@ -1,0 +1,10 @@
+<div>
+  <form phx-submit="basic_event">
+    <div>DIV <%= @text %></div>
+    <button phx-click="click" phx-target="<%= @myself %>">BUTTON <%= @text %></button>
+    <label>LABEL <%= @text %></label>
+    <button>
+      <label>LABEL INSIDE BUTTON <%= @text %></label>
+    </button>
+  </form>
+</div>
